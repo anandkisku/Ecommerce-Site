@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(226, 245, 157);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  background-color: #71f756;
   display: flex;
+  align-items: center; 
+  position: sticky;
+  top: 0;
+  z-index: 5;
+ 
+}
+.header__logo{
+  height: 40px;
+  width: 15%;
+  margin-top:10px;
+  margin-left: 10px;
+}
+.header_search{
+  display: flex;
+  position: relative;
+  right:13%;
+  width: 100%;
+
+}
+.header_searchInput{
+  width: 100% !important;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+}
+.header_searchIcon{
+  height: 28px !important;
+  background-color: #21a007;
+}
+
+.header_nav{
+  display: flex;
+  position: relative;
+  right:4%;
+  justify-content: space-evenly;
+ 
+}
+.header_option{
+  margin-right: 25px;
+  
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding: 5px;
+  list-style: none;
+}
+.header_link{
+  color: aliceblue;
+  text-decoration: none;
+  
+}
+.header_optionlineone{
+  font-size: 13px;
+}
+.header_optionlinetwo{
+  font-size: 14px;
+  font-weight: bolder;
+}
+.header_optionbasket{
+  display: flex;
+  color: aliceblue;
+  margin-top: 14px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.header_optionbasket span{
+  margin-left: 6px;
+  text-decoration: none;
+}
+.home_image{
+  width: 100%;
+}
+.checkout_ad{
+  width: 100%;
+  z-index:-1 ;  
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.checkoutProduct{
+  display:flex;
+  margin-top: 20px;
+  
+}
+.checkoutProduct__image{
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+}
+.checkoutProduct__info{
+  padding-left: 20px;
+}
+.checkoutProduct button{
+  background-color: #21a007;
+  border: 1px solid;
+  border-color: #21a007;
+  color: #111;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.checkoutProduct__rating{
+  display: flex;
+}
+.checkout_info{
+  margin-left: 30px;
+}
+.checkoutProduct_title{
+  font-size:17px;
+  font-weight: 800;
+  width: 60%;
+}
+.remove_item_btn, .add_to_basket_btn{
+  cursor: pointer;
+}
+.remove_item_btn :hover, .add_to_basket_btn:hover{
+  background-color: #21a007;
+}
+.checkout{
+  display: flex;
+  padding :10px;
+  background-color: white;
+  height: max-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
